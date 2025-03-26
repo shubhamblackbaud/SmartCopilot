@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5f321684-0aec-4c11-8921-1fa9377a7b5d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DBCC.py</StartupFile>
+    <StartupFile>chatbot.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,13 +21,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="chatbot.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="modules.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DBCC.py" />
+    <Compile Include="Train.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
